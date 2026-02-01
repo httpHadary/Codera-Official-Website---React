@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function openMenu() {
     menu.classList.add("open");
     overlay.classList.add("active");
-    document.body.style.overflow = "hidden"; // lock scroll
+    document.body.style.overflow = "hidden";
   }
 
   function closeMenu() {
     menu.classList.remove("open");
     overlay.classList.remove("active");
-    document.body.style.overflow = ""; // restore scroll
+    document.body.style.overflow = "";
   }
 
   toggle.addEventListener("click", openMenu);
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   overlay.addEventListener("click", closeMenu);
 
-  // Close when clicking link
   document.querySelectorAll(".mobile-menu a").forEach(link => {
     link.addEventListener("click", closeMenu);
   });
