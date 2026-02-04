@@ -1782,6 +1782,7 @@ textarea.is-invalid {
   opacity: 1;
   visibility: visible;
 }
+
 .th-mobile-menu {
   overflow-y: scroll;
   max-height: calc(100vh - 200px);
@@ -2871,6 +2872,7 @@ textarea.is-invalid {
   background-color: var(--title-color);
   width: 45px;
 }
+
 .scroll-top {
   position: fixed;
   right: 30px;
@@ -43320,6 +43322,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: -50px;
   padding-bottom: 0;
 }
+
 .about-sec-v4 {
   padding-top: 0px;
 }
@@ -44127,4 +44130,38 @@ html[dir="rtl"] .text-center {
     margin-top: 2px !important;
   }
 
+}
+
+.cursor,
+.cursor2 {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+@media (max-width: 768px) {
+  .cursor,
+  .cursor2 {
+    display: none;
+  }
+}
+/* 
+/* Fix extra space after footer */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  min-height: auto !important;
+  padding-bottom: 0 !important;
+}
+
+.gradient-body {
+  min-height: auto !important;
+}
+
+.footer-wrapper {
+  overflow: hidden;
 }
