@@ -46,7 +46,7 @@ function Header({ openMenu }) {
                   <a href="#hero">
 
                     <img
-                      src="/assets/img/icon/edited-photo.png"
+                      src="assets/img/icon/edited-photo.png"
                       alt="Codera"
                       width="180"
                     />

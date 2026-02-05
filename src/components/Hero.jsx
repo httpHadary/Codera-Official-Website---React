@@ -11,7 +11,7 @@ function Hero() {
       {/* Hero Image */}
       <div className="hero-img tilt-active">
         <img
-          src="/assets/img/hero/hero_img_1_1.png"
+          src="assets/img/hero/hero_img_1_1.png"
           alt="Hero"
         />
       </div>
@@ -83,21 +83,21 @@ function Hero() {
       {/* Shapes */}
       <div className="hero-shape1">
         <img
-          src="/assets/img/hero/hero_shape_1_1.svg"
+          src="assets/img/hero/hero_shape_1_1.svg"
           alt="shape"
         />
       </div>
 
       <div className="hero-shape2">
         <img
-          src="/assets/img/hero/hero_shape_1_2.svg"
+          src="assets/img/hero/hero_shape_1_2.svg"
           alt="shape"
         />
       </div>
 
       <div className="hero-shape3">
         <img
-          src="/assets/img/hero/hero_shape_1_3.svg"
+          src="assets/img/hero/hero_shape_1_3.svg"
           alt="shape"
         />
       </div>

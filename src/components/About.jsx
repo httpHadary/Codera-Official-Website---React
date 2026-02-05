@@ -19,21 +19,21 @@ function About() {
 
               <div className="img1">
                 <img
-                  src="/assets/img/normal/about_4_1.png"
+                  src="assets/img/normal/about_4_1.png"
                   alt="About"
                 />
               </div>
 
               <div className="shape1">
                 <img
-                  src="/assets/img/normal/about_4_2.png"
+                  src="assets/img/normal/about_4_2.png"
                   alt="About"
                 />
               </div>
 
               <div className="shape2">
                 <img
-                  src="/assets/img/normal/about_4_3.png"
+                  src="assets/img/normal/about_4_3.png"
                   alt="About"
                 />
               </div>
@@ -75,7 +75,7 @@ function About() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("about.list.item1")}
@@ -83,7 +83,7 @@ function About() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("about.list.item2")}
@@ -91,7 +91,7 @@ function About() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("about.list.item3")}

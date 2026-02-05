@@ -21,25 +21,25 @@ function Testimonials() {
       text: t("testimonials.items.item1"),
       name: "Md Sumon Mia",
       company: "Rimasu",
-      image: "/assets/img/testimonial/testi_4_1.jpg",
+      image: "assets/img/testimonial/testi_4_1.jpg",
     },
     {
       text: t("testimonials.items.item2"),
       name: "David Farnandes",
       company: "Anaton",
-      image: "/assets/img/testimonial/testi_4_2.jpg",
+      image: "assets/img/testimonial/testi_4_2.jpg",
     },
     {
       text: t("testimonials.items.item3"),
       name: "Abraham Khalil",
       company: "Kormola",
-      image: "/assets/img/testimonial/testi_4_3.jpg",
+      image: "assets/img/testimonial/testi_4_3.jpg",
     },
     {
       text: t("testimonials.items.item4"),
       name: "Jackline Techie",
       company: "Anatora",
-      image: "/assets/img/testimonial/testi_4_4.jpg",
+      image: "assets/img/testimonial/testi_4_4.jpg",
     },
   ];
 
@@ -51,7 +51,7 @@ function Testimonials() {
       <div
         className="round-container"
         style={{
-          backgroundImage: "url(/assets/img/bg/testi_bg_4.jpg)",
+          backgroundImage: "url(assets/img/bg/testi_bg_4.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -157,7 +157,7 @@ function Testimonials() {
             <div className="testi-block-quote">
 
               <img
-                src="/assets/img/icon/quote_3d.png"
+                src="assets/img/icon/quote_3d.png"
                 alt="quote"
               />
 

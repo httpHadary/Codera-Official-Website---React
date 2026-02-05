@@ -15,19 +15,19 @@ function Clients() {
 
 
   const brands = [
-    "/assets/img/project/brand10.jpeg",
-    "/assets/img/project/brand2.jpeg",
-    "/assets/img/project/brand30.jpeg",
-    "/assets/img/project/brand40.jpeg",
-    "/assets/img/project/brand50.jpeg",
-    "/assets/img/project/brand10.jpeg",
-    "/assets/img/project/brand2.jpeg",
-    "/assets/img/project/brand30.jpeg",
-    "/assets/img/project/brand40.jpeg",
-    "/assets/img/project/brand50.jpeg",
-    "/assets/img/project/brand10.jpeg",
-    "/assets/img/project/brand2.jpeg",
-    "/assets/img/project/brand30.jpeg",
+    "assets/img/project/brand10.jpeg",
+    "assets/img/project/brand2.jpeg",
+    "assets/img/project/brand30.jpeg",
+    "assets/img/project/brand40.jpeg",
+    "assets/img/project/brand50.jpeg",
+    "assets/img/project/brand10.jpeg",
+    "assets/img/project/brand2.jpeg",
+    "assets/img/project/brand30.jpeg",
+    "assets/img/project/brand40.jpeg",
+    "assets/img/project/brand50.jpeg",
+    "assets/img/project/brand10.jpeg",
+    "assets/img/project/brand2.jpeg",
+    "assets/img/project/brand30.jpeg",
   ];
 
 

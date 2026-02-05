@@ -7,47 +7,47 @@ function Projects() {
 
   const projects = [
     {
-      img: "/assets/img/project/mproject1.jpeg",
+      img: "assets/img/project/mproject1.jpeg",
       title: t("projects.items.p1"),
       category: t("projects.categories.technology"),
     },
     {
-      img: "/assets/img/project/mproject2.jpeg",
+      img: "assets/img/project/mproject2.jpeg",
       title: t("projects.items.p2"),
       category: t("projects.categories.technology"),
     },
     {
-      img: "/assets/img/project/mproject3.jpeg",
+      img: "assets/img/project/mproject3.jpeg",
       title: t("projects.items.p3"),
       category: t("projects.categories.technology"),
     },
     {
-      img: "/assets/img/project/mproject5.jpeg",
+      img: "assets/img/project/mproject5.jpeg",
       title: t("projects.items.p4"),
       category: t("projects.categories.marketing"),
     },
     {
-      img: "/assets/img/project/mproject6.jpeg",
+      img: "assets/img/project/mproject6.jpeg",
       title: t("projects.items.p5"),
       category: t("projects.categories.marketing"),
     },
     {
-      img: "/assets/img/project/mproject7.jpeg",
+      img: "assets/img/project/mproject7.jpeg",
       title: t("projects.items.p6"),
       category: t("projects.categories.business"),
     },
     {
-      img: "/assets/img/project/mproject8.jpeg",
+      img: "assets/img/project/mproject8.jpeg",
       title: t("projects.items.p7"),
       category: t("projects.categories.technology"),
     },
     {
-      img: "/assets/img/project/mproject4.jpeg",
+      img: "assets/img/project/mproject4.jpeg",
       title: t("projects.items.p8"),
       category: t("projects.categories.technology"),
     },
     {
-      img: "/assets/img/project/mproject9.jpeg",
+      img: "assets/img/project/mproject9.jpeg",
       title: t("projects.items.p9"),
       category: t("projects.categories.technology"),
     },
@@ -170,7 +170,7 @@ function Projects() {
         >
 
           <img
-            src="/assets/img/shape/tech_shape_1.png"
+            src="assets/img/shape/tech_shape_1.png"
             alt="shape"
           />
 
@@ -184,7 +184,7 @@ function Projects() {
         >
 
           <img
-            src="/assets/img/shape/tech_shape_2.png"
+            src="assets/img/shape/tech_shape_2.png"
             alt="shape"
           />
 

@@ -35,22 +35,22 @@ function Services() {
 
   const counters = [
     {
-      icon: "/assets/img/icon/counter_2_1.png",
+      icon: "assets/img/icon/counter_2_1.png",
       number: 986,
       text: t("services.counters.projects"),
     },
     {
-      icon: "/assets/img/icon/counter_2_2.png",
+      icon: "assets/img/icon/counter_2_2.png",
       number: 896,
       text: t("services.counters.clients"),
     },
     {
-      icon: "/assets/img/icon/counter_2_3.png",
+      icon: "assets/img/icon/counter_2_3.png",
       number: 396,
       text: t("services.counters.experts"),
     },
     {
-      icon: "/assets/img/icon/counter_2_4.png",
+      icon: "assets/img/icon/counter_2_4.png",
       number: 496,
       text: t("services.counters.awards"),
     },
@@ -59,19 +59,19 @@ function Services() {
 
   const services = [
     {
-      icon: "/assets/img/icon/service_3d_1.png",
+      icon: "assets/img/icon/service_3d_1.png",
       title: t("services.cards.web"),
     },
     {
-      icon: "/assets/img/icon/service_3d_2.png",
+      icon: "assets/img/icon/service_3d_2.png",
       title: t("services.cards.ui"),
     },
     {
-      icon: "/assets/img/icon/service_3d_3.png",
+      icon: "assets/img/icon/service_3d_3.png",
       title: t("services.cards.marketing"),
     },
     {
-      icon: "/assets/img/icon/service_3d_4.png",
+      icon: "assets/img/icon/service_3d_4.png",
       title: t("services.cards.analysis"),
     },
   ];

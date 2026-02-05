@@ -20,21 +20,21 @@ function WhyUs() {
 
               <div className="img1">
                 <img
-                  src="/assets/img/normal/why_3_1.png"
+                  src="assets/img/normal/why_3_1.png"
                   alt="Why Choose Us"
                 />
               </div>
 
               <div className="shape1">
                 <img
-                  src="/assets/img/normal/why_3_2.png"
+                  src="assets/img/normal/why_3_2.png"
                   alt="Shape"
                 />
               </div>
 
               <div className="shape2">
                 <img
-                  src="/assets/img/normal/why_3_3.png"
+                  src="assets/img/normal/why_3_3.png"
                   alt="Shape"
                 />
               </div>
@@ -81,7 +81,7 @@ function WhyUs() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("why.list.item1")}
@@ -89,7 +89,7 @@ function WhyUs() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("why.list.item2")}
@@ -107,7 +107,7 @@ function WhyUs() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("why.list.item3")}
@@ -115,7 +115,7 @@ function WhyUs() {
 
                   <li>
                     <img
-                      src="/assets/img/icon/check_1.png"
+                      src="assets/img/icon/check_1.png"
                       alt="icon"
                     />
                     {t("why.list.item4")}

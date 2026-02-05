@@ -36,7 +36,7 @@ function Footer() {
 
                       <img
                         className="w-75"
-                        src="/assets/img/icon/edited-photo.re.png"
+                        src="assets/img/icon/edited-photo.re.png"
                         alt="Codera"
                       />
 
@@ -241,19 +241,19 @@ function Footer() {
 
       {/* ================= Shapes ================= */}
       <div className="shape-mockup" data-top="0%" data-left="0%">
-        <img src="/assets/img/shape/footer_shape_3.png" alt="shape" />
+        <img src="assets/img/shape/footer_shape_3.png" alt="shape" />
       </div>
 
       <div className="shape-mockup" data-top="0%" data-right="0%">
-        <img src="/assets/img/shape/footer_shape_4.png" alt="shape" />
+        <img src="assets/img/shape/footer_shape_4.png" alt="shape" />
       </div>
 
       <div className="shape-mockup" data-bottom="0%" data-left="0%">
-        <img src="/assets/img/shape/footer_shape_5.png" alt="shape" />
+        <img src="assets/img/shape/footer_shape_5.png" alt="shape" />
       </div>
 
       <div className="shape-mockup" data-bottom="0%" data-right="0%">
-        <img src="/assets/img/shape/footer_shape_6.png" alt="shape" />
+        <img src="assets/img/shape/footer_shape_6.png" alt="shape" />
       </div>
 
 

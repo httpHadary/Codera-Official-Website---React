@@ -7,22 +7,22 @@ function Process() {
 
   const steps = [
     {
-      icon: "/assets/img/icon/process_box_1.png",
+      icon: "assets/img/icon/process_box_1.png",
       title: t("process.steps.step1.title"),
       text: t("process.steps.step1.text"),
     },
     {
-      icon: "/assets/img/icon/process_box_2.png",
+      icon: "assets/img/icon/process_box_2.png",
       title: t("process.steps.step2.title"),
       text: t("process.steps.step2.text"),
     },
     {
-      icon: "/assets/img/icon/process_box_3.png",
+      icon: "assets/img/icon/process_box_3.png",
       title: t("process.steps.step3.title"),
       text: t("process.steps.step3.text"),
     },
     {
-      icon: "/assets/img/icon/process_box_4.png",
+      icon: "assets/img/icon/process_box_4.png",
       title: t("process.steps.step4.title"),
       text: t("process.steps.step4.text"),
     },
@@ -63,7 +63,7 @@ function Process() {
           <div className="process-line position-top">
 
             <img
-              src="/assets/img/bg/process_line_2.svg"
+              src="assets/img/bg/process_line_2.svg"
               alt="line"
             />
 

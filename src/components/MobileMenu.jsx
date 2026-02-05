@@ -23,7 +23,7 @@ function MobileMenu({ isOpen, closeMenu }) {
         <div className="mobile-menu-header">
 
           <img
-            src="/assets/img/icon/edited-photo.png"
+            src="assets/img/icon/edited-photo.png"
             alt="Codera"
             className="mobile-logo"
           />
