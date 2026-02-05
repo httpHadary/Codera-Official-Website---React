@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,7 +6,13 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
+
 function Clients() {
+
+  const { t, i18n } = useTranslation();
+
+  const isRTL = i18n.language === "ar";
+
 
   const brands = [
     "/assets/img/project/brand10.jpeg",
@@ -35,24 +41,29 @@ function Clients() {
       <div className="container space-bottom">
 
 
-        {/* Section Title */}
+        {/* ================= Title ================= */}
         <h2 className="sec-title text-center">
 
           <span className="text-theme">
-            Our Clients !
+            {t("clients.title")}
           </span>
 
         </h2>
 
 
-        {/* Slider */}
+        {/* ================= Slider ================= */}
         <div className="slider-area text-center">
 
           <Swiper
 
+            key={isRTL ? "rtl" : "ltr"} // force rebuild
+
             modules={[Autoplay]}
 
-            loop={true}
+            loop
+
+            dir={isRTL ? "rtl" : "ltr"}
+            rtl={isRTL}
 
             autoplay={{
               delay: 2500,

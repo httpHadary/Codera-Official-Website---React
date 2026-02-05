@@ -1,6 +1,10 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+
+  const { t } = useTranslation();
+
+
   return (
 
     <footer
@@ -8,7 +12,8 @@ function Footer() {
       className="footer-wrapper footer-layout2 bg-transparent"
     >
 
-      {/* Widget Area */}
+
+      {/* ================= Widget Area ================= */}
       <div className="widget-area">
 
         <div className="container">
@@ -16,7 +21,7 @@ function Footer() {
           <div className="row justify-content-between">
 
 
-            {/* About */}
+            {/* ================= About ================= */}
             <div className="col-md-6 col-xxl-3 col-xl-4">
 
               <div className="widget footer-widget">
@@ -43,9 +48,7 @@ function Footer() {
                   {/* Text */}
                   <p className="about-text">
 
-                    Professionally redefine transparent ROI through low-risk
-                    high-yield imperatives. Progressively create empowered,
-                    cost effective users via team driven.
+                    {t("footer.aboutText")}
 
                   </p>
 
@@ -87,32 +90,41 @@ function Footer() {
             </div>
 
 
-            {/* Quick Links */}
+            {/* ================= Quick Links ================= */}
             <div className="col-md-6 col-xl-auto">
 
               <div className="widget widget_nav_menu footer-widget">
 
+
                 <h3 className="widget_title">
-                  Quick Links
+                  {t("footer.quickLinks.title")}
                 </h3>
 
 
                 <ul className="menu">
 
                   <li>
-                    <a href="#about-sec">About Us</a>
+                    <a href="#about-sec">
+                      {t("footer.quickLinks.about")}
+                    </a>
                   </li>
 
                   <li>
-                    <a href="#service-sec">Our Services</a>
+                    <a href="#service-sec">
+                      {t("footer.quickLinks.services")}
+                    </a>
                   </li>
 
                   <li>
-                    <a href="#selected-projects">Our Projects</a>
+                    <a href="#selected-projects">
+                      {t("footer.quickLinks.projects")}
+                    </a>
                   </li>
 
                   <li>
-                    <a href="#contact-sec">Contact Us</a>
+                    <a href="#contact-sec">
+                      {t("footer.quickLinks.contact")}
+                    </a>
                   </li>
 
                 </ul>
@@ -122,13 +134,14 @@ function Footer() {
             </div>
 
 
-            {/* Contact Info */}
+            {/* ================= Contact Info ================= */}
             <div className="col-md-6 col-xl-auto">
 
               <div className="widget footer-widget">
 
+
                 <h3 className="widget_title">
-                  Contact Us
+                  {t("footer.contact.title")}
                 </h3>
 
 
@@ -145,7 +158,7 @@ function Footer() {
                     <div className="media-body">
 
                       <p className="contact-feature_label">
-                        Phone Number
+                        {t("footer.contact.phone")}
                       </p>
 
                       <a
@@ -170,7 +183,7 @@ function Footer() {
                     <div className="media-body">
 
                       <p className="contact-feature_label">
-                        Email Address
+                        {t("footer.contact.email")}
                       </p>
 
                       <a
@@ -195,7 +208,7 @@ function Footer() {
                     <div className="media-body">
 
                       <p className="contact-feature_label">
-                        Office Location
+                        {t("footer.contact.location")}
                       </p>
 
                       <a
@@ -226,7 +239,7 @@ function Footer() {
       </div>
 
 
-      {/* Shapes */}
+      {/* ================= Shapes ================= */}
       <div className="shape-mockup" data-top="0%" data-left="0%">
         <img src="/assets/img/shape/footer_shape_3.png" alt="shape" />
       </div>

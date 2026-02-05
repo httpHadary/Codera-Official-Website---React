@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "why": "Why Us",
+    "testimonials": "Testimonials",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+
+  "lang": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+
+  "hero": {
+    "brand": "Codera",
+    "title1": "Crafting solutions for tomorrow",
+    "title2_part1": "For Smart",
+    "title2_highlight": "IT Solution",
+    "description": "We build scalable, secure, and future-ready software solutions for modern businesses.",
+    "aboutBtn": "About Us",
+    "startBtn": "Start Your Project"
+  },
+
+  "about": {
+    "subtitle": "About Codera",
+    "title": "We've Been Thriving for 25 Years.",
+
+    "description": "Codera is a software development company focused on building high-quality digital solutions that combine clean code with a future-oriented mindset. We help businesses turn ideas into reliable systems and applications designed for long-term success.",
+
+    "list": {
+      "item1": "Dramatically re-engineer value added IT systems via mission",
+      "item2": "Website & Mobile application design & Development",
+      "item3": "Professional User Experience & Interface researching"
+    },
+
+    "visionSubtitle": "Vision & Mission",
+
+    "visionTitle": "To become a trusted technology partner driving businesses toward a smarter digital future.",
+
+    "missionTitle": "Deliver high-quality software solutions that create real value through innovation and precision."
+  },
+
+  "services": {
+    "counters": {
+      "projects": "Finished Projects",
+      "clients": "Happy Clients",
+      "experts": "Skilled Experts",
+      "awards": "Honorable Awards"
+    },
+
+    "subtitle": "Our Services",
+    "title": "We Provide Exclusive Services",
+
+    "cards": {
+      "web": "Web Development",
+      "ui": "UI/UX Design",
+      "marketing": "Digital Marketing",
+      "analysis": "Business Analysis"
+    },
+
+    "description": "We deliver innovative solutions that help businesses improve their digital performance and achieve sustainable growth using the latest technologies."
+  },
+
+  "why": {
+    "subtitle": "Why Choose Codera",
+    "title": "You Get IT & Business Solution",
+
+    "description": "We provide integrated technology solutions based on innovation and teamwork to achieve the best results for our clients.",
+
+    "list": {
+      "item1": "Big Data Analysis",
+      "item2": "24/7 Online Support",
+      "item3": "High Quality Security",
+      "item4": "Virtual Support Team"
+    }
+  },
+
+  "process": {
+    "subtitle": "Work Process",
+
+    "title_part1": "How to",
+    "title_highlight": "work it!",
+
+    "steps": {
+      "step1": {
+        "title": "Select a Project",
+        "text": "We develop effective solutions based on accurate planning and achieving the best results at the lowest possible cost."
+      },
+      "step2": {
+        "title": "Project Analysis",
+        "text": "We analyze project requirements carefully to ensure optimal performance and long-term success."
+      },
+      "step3": {
+        "title": "Plan & Execute",
+        "text": "We implement structured plans using modern technologies to ensure high-quality results."
+      },
+      "step4": {
+        "title": "Deliver Result",
+        "text": "We deliver reliable and scalable solutions that meet client expectations."
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Our Testimonials!",
+
+    "items": {
+      "item1": "Working with Codera was an excellent experience. A professional team that delivered high-quality technical solutions and helped us grow our business.",
+      "item2": "Codera provided outstanding support and innovative solutions that exceeded our expectations.",
+      "item3": "A reliable and creative team that helped us transform our ideas into powerful digital systems.",
+      "item4": "Great cooperation, strong communication, and impressive technical expertise."
+    },
+
+    "roles": {
+      "ceo": "CEO at"
+    }
+  },
+
+  "projects": {
+    "title_part1": "Selected",
+    "title_highlight": "Projects!",
+
+    "categories": {
+      "technology": "Technology",
+      "marketing": "Marketing",
+      "business": "Business"
+    },
+
+    "items": {
+      "p1": "IT Consultancy",
+      "p2": "Web Development",
+      "p3": "Website Design",
+      "p4": "SEO Optimization",
+      "p5": "Digital Marketing",
+      "p6": "Business Analysis",
+      "p7": "Software Service",
+      "p8": "Data Recovery",
+      "p9": "Cloud Computing"
+    }
+  },
+
+  "clients": {
+    "title": "Our Clients!"
+  },
+
+  "footer": {
+    "aboutText": "We provide professional technology solutions that help businesses achieve the highest return on investment through innovation and quality.",
+
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "services": "Our Services",
+      "projects": "Our Projects",
+      "contact": "Contact Us"
+    },
+
+    "contact": {
+      "title": "Contact Us",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "location": "Office Location"
+    }
+  }
+}

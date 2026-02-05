@@ -1,27 +1,30 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Process() {
+
+  const { t } = useTranslation();
+
 
   const steps = [
     {
       icon: "/assets/img/icon/process_box_1.png",
-      title: "Select a project",
-      text: "Continua scale empowered metrics with cost effective innovation.",
+      title: t("process.steps.step1.title"),
+      text: t("process.steps.step1.text"),
     },
     {
       icon: "/assets/img/icon/process_box_2.png",
-      title: "Project analysis",
-      text: "Continua scale empowered metrics with cost effective innovation.",
+      title: t("process.steps.step2.title"),
+      text: t("process.steps.step2.text"),
     },
     {
       icon: "/assets/img/icon/process_box_3.png",
-      title: "Plan Execute",
-      text: "Continua scale empowered metrics with cost effective innovation.",
+      title: t("process.steps.step3.title"),
+      text: t("process.steps.step3.text"),
     },
     {
       icon: "/assets/img/icon/process_box_4.png",
-      title: "Deliver result",
-      text: "Continua scale empowered metrics with cost effective innovation.",
+      title: t("process.steps.step4.title"),
+      text: t("process.steps.step4.text"),
     },
   ];
 
@@ -36,14 +39,17 @@ function Process() {
         <div className="title-area text-center">
 
           <span className="sub-title">
-            WORK PROCESS
+            {t("process.subtitle")}
           </span>
 
           <h2 className="sec-title">
-            How to work{" "}
+
+            {t("process.title_part1")}{" "}
+
             <span className="text-theme">
-              it!
+              {t("process.title_highlight")}
             </span>
+
           </h2>
 
         </div>

@@ -1,52 +1,55 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+
+  const { t } = useTranslation();
+
 
   const projects = [
     {
       img: "/assets/img/project/mproject1.jpeg",
-      title: "IT Consultency",
-      category: "Technology",
+      title: t("projects.items.p1"),
+      category: t("projects.categories.technology"),
     },
     {
       img: "/assets/img/project/mproject2.jpeg",
-      title: "Web Development",
-      category: "Technology",
+      title: t("projects.items.p2"),
+      category: t("projects.categories.technology"),
     },
     {
       img: "/assets/img/project/mproject3.jpeg",
-      title: "Website Design",
-      category: "Technology",
+      title: t("projects.items.p3"),
+      category: t("projects.categories.technology"),
     },
     {
       img: "/assets/img/project/mproject5.jpeg",
-      title: "SEO Optimization",
-      category: "Marketing",
+      title: t("projects.items.p4"),
+      category: t("projects.categories.marketing"),
     },
     {
       img: "/assets/img/project/mproject6.jpeg",
-      title: "Digital Marketing",
-      category: "Marketing",
+      title: t("projects.items.p5"),
+      category: t("projects.categories.marketing"),
     },
     {
       img: "/assets/img/project/mproject7.jpeg",
-      title: "Business Analysis",
-      category: "Business",
+      title: t("projects.items.p6"),
+      category: t("projects.categories.business"),
     },
     {
       img: "/assets/img/project/mproject8.jpeg",
-      title: "Software Service",
-      category: "Technology",
+      title: t("projects.items.p7"),
+      category: t("projects.categories.technology"),
     },
     {
       img: "/assets/img/project/mproject4.jpeg",
-      title: "Data Recovery",
-      category: "Technology",
+      title: t("projects.items.p8"),
+      category: t("projects.categories.technology"),
     },
     {
       img: "/assets/img/project/mproject9.jpeg",
-      title: "Cloud Computing",
-      category: "Technology",
+      title: t("projects.items.p9"),
+      category: t("projects.categories.technology"),
     },
   ];
 
@@ -60,14 +63,18 @@ function Projects() {
         className="title-area text-center"
         id="selected-projects"
       >
+
         <h2 className="sec-title">
 
-          Selected
-          <span className="text-theme"> Projects!</span>
+          {t("projects.title_part1")}{" "}
+
+            <span className="text-theme">
+              {t("projects.title_highlight")}
+            </span>
 
         </h2>
-      </div>
 
+      </div>
 
       {/* Projects Section */}
       <section
@@ -107,7 +114,7 @@ function Projects() {
                     <div className="project-content">
 
 
-                      {/* Particle (optional) */}
+                      {/* Particle */}
                       <div
                         className="box-particle"
                         id={`project-p${index + 1}`}

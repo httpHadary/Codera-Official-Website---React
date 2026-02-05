@@ -1,12 +1,17 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function WhyUs() {
+
+  const { t } = useTranslation();
+
+
   return (
     <section id="why-sec">
 
       <div className="container space">
 
         <div className="row align-items-center flex-row-reverse">
+
 
           {/* ================= Image Side ================= */}
           <div className="col-lg-6 mb-30 mb-lg-0">
@@ -44,29 +49,30 @@ function WhyUs() {
           {/* ================= Content Side ================= */}
           <div className="col-lg-6 text-lg-start text-center">
 
+
+            {/* Title */}
             <div className="title-area mb-35">
 
               <span className="sub-title">
-                WHY CHOOSE Codera
+                {t("why.subtitle")}
               </span>
 
               <h2 className="sec-title">
-                You Get IT & Business Solution
+                {t("why.title")}
               </h2>
 
             </div>
 
 
+            {/* Description */}
             <p className="mt-n2 mb-30">
-              Dynamically brand plug-and-play action items for extensive
-              leadership. Dramatically seize prospective content through
-              seamless collaboration. Quickly leverage existing 24/7 portals
-              via scalable alignments.
+              {t("why.description")}
             </p>
 
 
             {/* ================= Checklist ================= */}
             <div className="two-column mb-40 list-center">
+
 
               {/* Column 1 */}
               <div className="checklist style2">
@@ -78,7 +84,7 @@ function WhyUs() {
                       src="/assets/img/icon/check_1.png"
                       alt="icon"
                     />
-                    Big Data Analysis
+                    {t("why.list.item1")}
                   </li>
 
                   <li>
@@ -86,7 +92,7 @@ function WhyUs() {
                       src="/assets/img/icon/check_1.png"
                       alt="icon"
                     />
-                    24/7 Online Support
+                    {t("why.list.item2")}
                   </li>
 
                 </ul>
@@ -104,7 +110,7 @@ function WhyUs() {
                       src="/assets/img/icon/check_1.png"
                       alt="icon"
                     />
-                    High Quality Security
+                    {t("why.list.item3")}
                   </li>
 
                   <li>
@@ -112,7 +118,7 @@ function WhyUs() {
                       src="/assets/img/icon/check_1.png"
                       alt="icon"
                     />
-                    Virtual Support Team
+                    {t("why.list.item4")}
                   </li>
 
                 </ul>

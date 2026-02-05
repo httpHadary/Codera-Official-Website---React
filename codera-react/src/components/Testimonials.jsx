@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,31 +8,37 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+
 function Testimonials() {
+
+  const { t, i18n } = useTranslation();
+
+  const isRTL = i18n.language === "ar";
+
 
   const testimonials = [
     {
-      text: "Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage others multifunctional methods.",
+      text: t("testimonials.items.item1"),
       name: "Md Sumon Mia",
-      role: "CEO at Rimasu",
+      company: "Rimasu",
       image: "/assets/img/testimonial/testi_4_1.jpg",
     },
     {
-      text: "Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage others multifunctional methods.",
+      text: t("testimonials.items.item2"),
       name: "David Farnandes",
-      role: "CEO at Anaton",
+      company: "Anaton",
       image: "/assets/img/testimonial/testi_4_2.jpg",
     },
     {
-      text: "Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage others multifunctional methods.",
+      text: t("testimonials.items.item3"),
       name: "Abraham Khalil",
-      role: "CEO at Kormola",
+      company: "Kormola",
       image: "/assets/img/testimonial/testi_4_3.jpg",
     },
     {
-      text: "Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage others multifunctional methods.",
+      text: t("testimonials.items.item4"),
       name: "Jackline Techie",
-      role: "CEO at Anatora",
+      company: "Anatora",
       image: "/assets/img/testimonial/testi_4_4.jpg",
     },
   ];
@@ -62,7 +68,7 @@ function Testimonials() {
             <h2 className="sec-title text-center">
 
               <span className="text-theme">
-                Our Testimonials !
+                {t("testimonials.title")}
               </span>
 
             </h2>
@@ -70,8 +76,11 @@ function Testimonials() {
 
             {/* ================= Slider ================= */}
             <Swiper
+              key={isRTL ? "rtl" : "ltr"} // force rebuild on language change
               modules={[Autoplay, Pagination]}
-              loop={true}
+              loop
+              dir={isRTL ? "rtl" : "ltr"}
+              rtl={isRTL}
 
               autoplay={{
                 delay: 4000,
@@ -122,7 +131,9 @@ function Testimonials() {
                         </h3>
 
                         <p className="testi-block_desig">
-                          {item.role}
+
+                          {t("testimonials.roles.ceo")} {item.company}
+
                         </p>
 
                       </div>

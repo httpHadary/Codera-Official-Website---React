@@ -1,4 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 function Hero() {
+
+  const { t } = useTranslation();
+
+
   return (
     <div className="th-hero-wrapper hero-1" id="hero">
 
@@ -10,47 +16,69 @@ function Hero() {
         />
       </div>
 
+
       <div className="container">
         <div className="hero-style1">
 
-          <span className="hero-subtitle">Codera</span>
+          {/* Brand */}
+          <span className="hero-subtitle">
+            {t("hero.brand")}
+          </span>
 
+
+          {/* Title Line 1 */}
           <h1 className="hero-title">
-            Crafting solutions for tomorrow
+            {t("hero.title1")}
           </h1>
 
+
+          {/* Title Line 2 */}
           <h1 className="hero-title">
-            For Smart{" "}
+
+            {t("hero.title2_part1")}{" "}
+
             <span className="text-theme fw-medium">
-              IT Solution
+              {t("hero.title2_highlight")}
             </span>
+
           </h1>
 
+
+          {/* Description */}
           <p className="hero-text">
-            We build scalable, secure, and future-ready software
-            solutions for modern businesses.
+            {t("hero.description")}
           </p>
 
-          {/* Buttons */}
+
+          {/* About Button */}
           <div className="btn-group">
             <a href="#about-sec" className="th-btn">
-              ABOUT US 
+
+              {t("hero.aboutBtn")}
+
               <i className="fa-regular fa-arrow-right ms-2"></i>
+
             </a>
           </div>
 
+
+          {/* Start Button */}
           <div className="btn-group">
             <a
               href="#contact-sec"
               className="th-btn m-3"
             >
-              START YOUR PROJECT 
+
+              {t("hero.startBtn")}
+
               <i className="fa-regular fa-arrow-right ms-2"></i>
+
             </a>
           </div>
 
         </div>
       </div>
+
 
       {/* Shapes */}
       <div className="hero-shape1">

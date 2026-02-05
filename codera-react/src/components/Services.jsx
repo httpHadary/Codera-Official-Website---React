@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,7 +10,9 @@ import { useInView } from "react-intersection-observer";
 
 import "swiper/css";
 
+
 function AnimatedCounter({ value }) {
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -23,54 +25,67 @@ function AnimatedCounter({ value }) {
   );
 }
 
+
 function Services() {
+
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
+
+
   const counters = [
     {
       icon: "/assets/img/icon/counter_2_1.png",
       number: 986,
-      text: "Finished Project",
+      text: t("services.counters.projects"),
     },
     {
       icon: "/assets/img/icon/counter_2_2.png",
       number: 896,
-      text: "Happy Clients",
+      text: t("services.counters.clients"),
     },
     {
       icon: "/assets/img/icon/counter_2_3.png",
       number: 396,
-      text: "Skilled Experts",
+      text: t("services.counters.experts"),
     },
     {
       icon: "/assets/img/icon/counter_2_4.png",
       number: 496,
-      text: "Honorable Awards",
+      text: t("services.counters.awards"),
     },
   ];
+
 
   const services = [
     {
       icon: "/assets/img/icon/service_3d_1.png",
-      title: "Web Development",
+      title: t("services.cards.web"),
     },
     {
       icon: "/assets/img/icon/service_3d_2.png",
-      title: "UI/UX Design",
+      title: t("services.cards.ui"),
     },
     {
       icon: "/assets/img/icon/service_3d_3.png",
-      title: "Digital Marketing",
+      title: t("services.cards.marketing"),
     },
     {
       icon: "/assets/img/icon/service_3d_4.png",
-      title: "Business Analysis",
+      title: t("services.cards.analysis"),
     },
   ];
 
+
   return (
     <section id="service-sec">
+
       <div className="round-container gr-bg3 space">
+
         <div className="container">
 
+
+          {/* Counters */}
           <div className="row gy-40 justify-content-between space-bottom">
 
             {counters.map((item, index) => (
@@ -102,21 +117,26 @@ function Services() {
           </div>
 
 
+          {/* Title */}
           <div className="title-area text-center">
 
-            <span className="sub-title">OUR SERVICES</span>
+            <span className="sub-title">
+              {t("services.subtitle")}
+            </span>
 
             <h2 className="sec-title">
-              We Provide Exclusive Services
+              {t("services.title")}
             </h2>
 
           </div>
 
-          <div className="slider-area">
+
+          {/* Slider */}
+          <div className="slider-area services-slider">
 
             <Swiper
               modules={[Autoplay]}
-              loop={true}
+              loop          
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
@@ -141,15 +161,11 @@ function Services() {
                     <div className="service-3d_content">
 
                       <h3 className="box-title">
-                        <a href="#">
-                          {service.title}
-                        </a>
+                        {service.title}
                       </h3>
 
                       <p className="service-3d_text">
-                        Intrinsicly redefine competitive e-business before
-                        adaptive potentialiti. Professionally build progressive
-                        users with.
+                        {t("services.description")}
                       </p>
 
                     </div>
@@ -164,7 +180,9 @@ function Services() {
           </div>
 
         </div>
+
       </div>
+
     </section>
   );
 }

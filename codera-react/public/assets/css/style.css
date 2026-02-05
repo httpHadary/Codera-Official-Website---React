@@ -44165,3 +44165,25 @@ html {
 .footer-wrapper {
   overflow: hidden;
 }
+
+/* Fix RTL only for Services slider */
+html[dir="rtl"] .services-slider .swiper {
+  direction: ltr;
+}
+
+/* App Fade Transition */
+.app-wrapper {
+  transition: opacity 0.25s ease-in-out;
+}
+
+.app-wrapper.fade-out {
+  opacity: 0;
+}
+
+.app-wrapper.fade-in {
+  opacity: 1;
+}
+html,
+body {
+  overflow-x: hidden;
+}

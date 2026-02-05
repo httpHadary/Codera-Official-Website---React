@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-function Header({openMenu}) {
+function Header({ openMenu }) {
 
+  const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
+
+  const isArabic = i18n.language === "ar";
 
   useEffect(() => {
 
     const handleScroll = () => {
-
-      if (window.scrollY > 150) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-
+      setIsSticky(window.scrollY > 150);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,11 +21,15 @@ function Header({openMenu}) {
   }, []);
 
 
+  const changeLang = () => {
+      setTimeout(() => {
+        i18n.changeLanguage(isArabic ? "en" : "ar");
+      }, 150);
+  };
+
   return (
     <header className="th-header header-layout2">
 
-
-      {/* IMPORTANT: sticky class goes here */}
       <div className={`sticky-wrapper ${isSticky ? "sticky" : ""}`}>
 
         <div className="menu-area">
@@ -62,13 +64,13 @@ function Header({openMenu}) {
 
                   <ul>
 
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about-sec">About</a></li>
-                    <li><a href="#service-sec">Services</a></li>
-                    <li><a href="#why-sec">Why Us</a></li>
-                    <li><a href="#clients-sec">Testimonials</a></li>
-                    <li><a href="#selected-projects">Clients</a></li>
-                    <li><a href="#contact-sec">Contact</a></li>
+                    <li><a href="#hero">{t("nav.home")}</a></li>
+                    <li><a href="#about-sec">{t("nav.about")}</a></li>
+                    <li><a href="#service-sec">{t("nav.services")}</a></li>
+                    <li><a href="#why-sec">{t("nav.why")}</a></li>
+                    <li><a href="#clients-sec">{t("nav.testimonials")}</a></li>
+                    <li><a href="#selected-projects">{t("nav.clients")}</a></li>
+                    <li><a href="#contact-sec">{t("nav.contact")}</a></li>
 
                   </ul>
 
@@ -82,15 +84,16 @@ function Header({openMenu}) {
 
                 <div className="header-button">
 
-
-                  <a
-                    href="/index-ar.html"
+                  {/* Language Switch */}
+                  <button
+                    onClick={changeLang}
                     className="th-btn lang-btn d-none d-lg-inline-flex"
                   >
                     EN | AR
-                  </a>
+                  </button>
 
 
+                  {/* Mobile Button */}
                   <button
                     className="th-menu-toggle d-inline-block d-lg-none"
                     type="button"
